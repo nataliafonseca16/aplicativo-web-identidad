@@ -32,3 +32,114 @@
   </div>
   <div class="col-2"></div>
 </div>
+
+    <section class="container my-5">
+        <h2 class="text-center section-title">Galería de videos</h2>
+        <p class="text-center mb-4">
+            Haz clic en cada video para verlo en una ventana modal.
+        </p>
+
+        <div class="row g-4">
+
+            <!-- Video 1 -->
+            <div class="col-md-4">
+                <div class="card video-card h-100">
+                    <img src="img/video1.jpg" class="card-img-top" alt="Video 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Video educativo 1</h5>
+                        <p class="card-text">Introducción al tema principal.</p>
+                        <button 
+                            class="btn btn-pastel"
+                            data-bs-toggle="modal"
+                            data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                            data-title="Video educativo 1">
+                            Ver video
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 2 -->
+            <div class="col-md-4">
+                <div class="card video-card h-100">
+                    <img src="img/video2.jpg" class="card-img-top" alt="Video 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Video educativo 2</h5>
+                        <p class="card-text">Explicación complementaria.</p>
+                        <button 
+                            class="btn btn-pastel"
+                            data-bs-toggle="modal"
+                            data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/tgbNymZ7vqY"
+                            data-title="Video educativo 2">
+                            Ver video
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Video 3 -->
+            <div class="col-md-4">
+                <div class="card video-card h-100">
+                    <img src="img/video3.jpg" class="card-img-top" alt="Video 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Video educativo 3</h5>
+                        <p class="card-text">Actividad audiovisual.</p>
+                        <button 
+                            class="btn btn-pastel"
+                            data-bs-toggle="modal"
+                            data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ysz5S6PUM-U"
+                            data-title="Video educativo 3">
+                            Ver video
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+              <!-- Video 4 -->
+            <div class="col-md-4">
+                <div class="card video-card h-100">
+                    <img src="img/video4.jpg" class="card-img-top" alt="Video 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Video educativo 3</h5>
+                        <p class="card-text">Actividad audiovisual.</p>
+                        <button 
+                            class="btn btn-pastel"
+                            data-bs-toggle="modal"
+                            data-bs-target="#videoModal"
+                            data-video="https://www.youtube.com/embed/ysz5S6PUM-U"
+                            data-title="Video educativo 3">
+                            Ver video
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal para videos -->
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content modal-pastel">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="videoModalTitle">Video</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="ratio ratio-16x9">
+                        <iframe 
+                            id="videoFrame"
+                            src=""
+                            title="Reproductor de video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
